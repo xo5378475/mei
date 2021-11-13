@@ -9,8 +9,20 @@
     clear: both;
 }
 
+a{
+    text-decoration: none;
+    color: #333;
+}
+
 body{
         font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
         color: #333;
         min-width: 1226px;
+}
+
+/* 設置一個類表示中間寬度 */
+
+.w{
+    width: 1226px;
+    margin: 0 auto;
 }
