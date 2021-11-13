@@ -27,14 +27,45 @@
    float: left;
 }
 
+.app{
+    position: relative;
+}
+
+/* 三角形樣式 */
+.app-wrapper:hover > .app::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+
+    border-bottom-color: #fff;
+
+    bottom: 0;
+    /* 水平居中 */
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+li:hover >.app .qrcode{
+    display: block;
+}
+
 /* 設置下載APP下拉 */
 .app .qrcode{
+    position: absolute;
+    left: -40px;
     width: 124px;
+   
     height: 148px;
     line-height: 1;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
 }
 
 .app .qrcode img{
