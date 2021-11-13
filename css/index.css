@@ -27,6 +27,28 @@
    float: left;
 }
 
+/* 設置下載APP下拉 */
+.app .qrcode{
+    width: 124px;
+    height: 148px;
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.app .qrcode img{
+    width: 90px;
+    height: 90px;
+    margin: 17px;
+    margin-bottom: 10px;
+}
+
+.app .qrcode span{
+    color: #000;
+    font-size: 14px;
+}
+
 .shop-cart,.user-info{
     float: right;
 }
