@@ -92,6 +92,10 @@
 }
 
 /* 設置購物車樣式 */
+.shop-cart{
+    position: relative;
+}
+
 .shop-cart a{
     width: 120px;
     display: block;
@@ -110,4 +114,27 @@
 .shop-cart:hover a{
     background-color: #fff;
     color: #FF6700;
+}
+
+/* 購物車彈出層樣式 */
+.show-shop-cart{
+    position: absolute;
+    /* height:120px; */
+    height: 0;
+    overflow: hidden;
+    width: 350px;
+    /* left: -229px; */
+    right: 0;
+    top: 40px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 18%);  
+    transition: height 0.5s; 
+}
+
+.shop-cart:hover .show-shop-cart{
+    height: 120px;
+}
+
+.show-shop-cart span{
+    line-height: 120px;
+    color:#000
 }
