@@ -138,3 +138,47 @@
     line-height: 120px;
     color:#000
 }
+
+
+/* .header-wrapepr{} */
+
+
+.header{
+    height: 100px;
+    background-color: #bfa;
+}
+
+.header .logo{
+    float: left;
+    margin-top: 22px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    /* 隱藏logo中的文字 */
+    text-indent: -999px;
+}
+
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color: #FF6700;
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+    transition: left 0.3s;
+}
+
+.header .logo .home{
+    background-image: url(../img/mi-home.png);
+    left: -55px;
+}
+
+.header .logo:hover .mei{
+    left: 55px;
+}
+
+.header .logo:hover .home{
+    left: 0;
+}
