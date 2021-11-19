@@ -42,9 +42,7 @@
     height: 0;
     border: 8px solid transparent;
     border-top: none;
-
     border-bottom-color: #fff;
-
     bottom: 0;
     /* 水平居中 */
     left: 0;
@@ -57,6 +55,7 @@
 .app:hover > .qrcode,
 .app:hover::after{
     display: block;
+    height: 148px;
 }
 
 /* 設置下載APP下拉 */
@@ -64,13 +63,16 @@
     position: absolute;
     left: -40px;
     width: 124px;
-   
-    height: 148px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
     line-height: 1;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    display: none;
+    /* display: none; */
+    /* transition 用於為樣式設計過度效果 */
+    transition: height 0.5s;
 }
 
 .app .qrcode img{
