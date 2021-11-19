@@ -141,11 +141,15 @@
 }
 
 
-/* .header-wrapepr{} */
+.header-wrapper{
+    /* 給導航條彈出層定位 */
+    position: relative;
+}
 
 
 .header{
     height: 100px;
+    
     
 }
 
@@ -217,4 +221,28 @@
 /* 隱藏全部商品 */
 .all-goods{
     visibility: hidden;
+}
+
+/* .nav li:not(:first-of-type):hover ~ .goods-info, */
+.nav .show-goods:hover ~ .goods-info,
+.nav .goods-info:hover{
+    height: 228px;
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav .goods-info{
+    position: absolute;
+    /* height: 228px; */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    top: 100px;
+    left: 0px;
+    /* border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); */
+    background-color: #fff;
+    transition: height 0.5s;
+    z-index: 999;
 }
