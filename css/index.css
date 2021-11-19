@@ -126,6 +126,7 @@
     /* left: -229px; */
     right: 0;
     top: 40px;
+    background-color: #fff;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 18%);  
     transition: height 0.5s; 
 }
@@ -145,7 +146,7 @@
 
 .header{
     height: 100px;
-    background-color: #bfa;
+    
 }
 
 .header .logo{
@@ -181,4 +182,39 @@
 
 .header .logo:hover .home{
     left: 0;
+}
+
+
+.nav-wrapper{
+    float: left;
+    margin-left: 7px;
+}
+
+.nav-wrapper .nav{
+    width: 850px;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 58px;
+    /* 寬度 加上border padding */
+    box-sizing: border-box;
+}
+
+
+.nav-wrapper li{
+    float: left;
+}
+
+.nav-wrapper li a{
+    font-size: 16px;
+    margin-right: 20px;
+    display: block;
+}
+
+.nav-wrapper a:hover{
+    color: #FF6700;
+}
+
+/* 隱藏全部商品 */
+.all-goods{
+    visibility: hidden;
 }
