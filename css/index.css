@@ -32,8 +32,11 @@
 }
 
 /* 三角形樣式 */
-.app-wrapper:hover > .app::after{
+/* 法一 */
+/* .app-wrapper:hover > .app::after{ */
+.app::after{
     content: "";
+    display: none;
     position: absolute;
     width: 0;
     height: 0;
@@ -47,10 +50,12 @@
     left: 0;
     right: 0;
     margin: auto;
-
 }
 
-li:hover >.app .qrcode{
+
+/* 法二 */
+.app:hover > .qrcode,
+.app:hover::after{
     display: block;
 }
 
