@@ -448,11 +448,67 @@ border-left: 1px solid #fff;
 }
 
 .ad .shortcut{
-    width: 234px;
-    height: 170px;
+    padding-top:2px ;
+    width: 228px;
+    height: 168px;
     background-color: #5f5750;
     margin-right: 14px;
+    padding-left: 6px;
 }
+
+.ad .shortcut a{
+    display: block;
+    color: #cfccca;
+    height: 84px;
+    width: 76px;
+    text-align: center;
+    font-size: 12px;
+    /* 開啟BFC */
+    overflow: hidden;
+}
+
+.ad .shortcut a:hover{
+    color: white;
+}
+
+.ad .shortcut li{
+    position: relative;
+}
+
+.ad .shortcut li::before{
+    content: "";
+    background-color: #665e57;
+    position: absolute;
+    width: 64px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+
+}
+
+
+.ad .shortcut li::after{
+    content: "";
+    background-color: #665e57;
+    position: absolute;
+    width: 1px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin: auto 0;
+
+}
+
+.ad .shortcut i{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+
 
 .ad .ad-img li{
     width: 316px;
