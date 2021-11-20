@@ -73,6 +73,7 @@
     /* display: none; */
     /* transition 用於為樣式設計過度效果 */
     transition: height 0.5s;
+    z-index: 98;
 }
 
 .app .qrcode img{
@@ -340,4 +341,74 @@ border-left: 1px solid #fff;
     color: #fff;
  
     border-left: 1px solid #FF6700;
+}
+
+.banner{
+    position: relative;
+    height: 460px;
+}
+
+.banner .img-list li{
+    position: absolute;
+}
+
+
+.banner img{
+    width: 100%;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+/* 5個導航點 */
+
+.pointer{
+    position: absolute;
+    bottom: 22px;
+    right: 35px;
+}
+
+.pointer a{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 6px;
+   
+}
+
+.pointer a:hover,
+.pointer a.active{
+    background-color:  rgba(255, 255, 255, 0.4);
+    border:2px solid rgba(0, 0, 0, 0.4);
+}
+
+.prev-next a{
+    width: 41px;
+    height: 69px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-image: url(../img/icon-slides.png);
+}
+
+.prev-next .prev{
+    left: 234px;
+    background-position: -84px 0;
+}
+
+.prev-next .next{
+    right: 0;
+    background-position: -125px;
+}
+
+.prev-next .prev:hover{
+    background-position: 0px 0;
+}
+
+.prev-next .next:hover{
+    background-position: -42px;
 }
