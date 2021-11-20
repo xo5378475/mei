@@ -412,3 +412,26 @@ border-left: 1px solid #fff;
 .prev-next .next:hover{
     background-position: -42px;
 }
+
+.back-top{
+    width: 26px;
+    height: 206px;
+    background-color: white;
+    position: fixed;
+    bottom:60px;
+    right:50%;
+    margin-right: -639px;
+}
+
+.tool-list .tool a{
+    width: 26px;
+    height: 41px;
+    display: block;
+    
+}
+
+.tool img{
+    width: 100%;
+    margin-top: 5px;
+ 
+}
