@@ -129,6 +129,7 @@
     background-color: #fff;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 18%);  
     transition: height 0.5s; 
+    z-index: 999;
 }
 
 .shop-cart:hover .show-shop-cart{
@@ -207,6 +208,48 @@
 .nav-wrapper li{
     float: left;
 }
+
+.all-goods-wrapper{
+    position: relative;
+}
+
+
+/* 左側導航條 */
+.left-menu{
+    width: 234px;
+    height: 460px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    left: -120px;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.all-goods-wrapper .left-menu a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    color: white;
+    margin-right: 0;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+
+.all-goods-wrapper .left-menu a:hover{
+    color: white;
+    background-color: #FF6700;
+}
+.left-menu a i{
+    float: right;
+    /* 浮動單獨設置 */
+    line-height: 42px;
+}
+
 
 .nav-wrapper li a{
     font-size: 16px;
